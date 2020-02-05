@@ -22,7 +22,7 @@ CCFLAGS=-Ofast -mfpu=vfp -mfloat-abi=hard -march=armv6zk -mtune=arm1176jzf-s
 all: libmirf24
 
 # make example
-example: transmitter receiver libmirf24
+example: transmitter receiver
 
 # Make the library
 libmirf24: Mirf.o gpio.o spi.o compatibility.o
