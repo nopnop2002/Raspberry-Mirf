@@ -43,7 +43,7 @@ or
 sudo ./receiver
 ```
 
-# Communication with Arduino
+# Communicat with Arduino
 I used this library on Arduino.   
 
 - from Raspberry to Arduino:   
