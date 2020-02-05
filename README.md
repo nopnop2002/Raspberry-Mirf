@@ -1,7 +1,9 @@
 # Raspberry-Mirf
 A port of the Mirf library to Raspberry Pi. The library provides basic control of the Nordic NRF24l01 RF Transceiver.
 
-I ported from [here](https://github.com/dingcheng/MirfPi).
+I updated [this](https://github.com/dingcheng/MirfPi).
+Change the file name of the device.   
+Replaced SPI transfer function.   
 
 I tested on this environment:
 ```
