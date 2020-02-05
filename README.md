@@ -3,6 +3,12 @@ A port of the Mirf library to Raspberry Pi. The library provides basic control o
 
 I ported from [here](https://github.com/dingcheng/MirfPi).
 
+I tested on this revision:
+```
+$ uname -a
+Linux raspberrypi 4.19.66+ #1253 Thu Aug 15 11:37:30 BST 2019 armv6l GNU/Linux
+```
+
 # Wirering
 
 |nRF24L01||Raspberry|
