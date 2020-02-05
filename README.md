@@ -4,6 +4,7 @@ A port of the Mirf library to Raspberry Pi. The library provides basic control o
 I updated [this](https://github.com/dingcheng/MirfPi).   
 \* Change the file name of the device.   
 \* Replaced SPI transfer function.   
+\* Add example.   
 
 I tested on this environment:
 ```
