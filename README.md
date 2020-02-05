@@ -27,7 +27,7 @@ git clone https://github.com/nopnop2002/Raspberry-Mirf
 cd Raspberry-Mirf
 make
 sudo make install
-
+```
 
 # Example Build
 ```
