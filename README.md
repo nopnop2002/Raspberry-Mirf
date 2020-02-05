@@ -5,7 +5,7 @@ I ported from [here](https://github.com/dingcheng/MirfPi).
 
 # Wirering
 
-|nRF24L01||Rpi/OPI|
+|nRF24L01||Raspberry|
 |:-:|:-:|:-:|
 |MISO|--|Pin#21(SPI MISO)|
 |SCK|--|Pin#23(SPI SCLK)|
@@ -18,7 +18,7 @@ I ported from [here](https://github.com/dingcheng/MirfPi).
 \*You can change any pin.   
 ```
 Mirf.cePin=25; // GPIO25
-Mirf.csnPin=8; // GPIO9
+Mirf.csnPin=8; // GPIO8
 ```
 
 # Library Install

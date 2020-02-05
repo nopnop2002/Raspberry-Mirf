@@ -20,7 +20,7 @@ int main(int argc, char** argv)
 {
 	Nrf24l Mirf = Nrf24l("/dev/spidev0.1", 4000000);
 	Mirf.cePin=25; // GPIO25
-	Mirf.csnPin=8; // GPIO9
+	Mirf.csnPin=8; // GPIO8
 	Mirf.init();
 	Mirf.setRADDR((uint8_t *)"ABCDE");
 	Mirf.payload = sizeof(mydata.value);
