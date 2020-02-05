@@ -46,11 +46,11 @@ sudo ./receiver
 # Communication with Arduino
 I used this library on Arduino.   
 
-- from Raspberry pi to Arduino   
-Raspberry Pi side:transmitter   
-Arduino side:https://github.com/nopnop2002/Arduino-STM32-nRF24L01/tree/master/example/Peer-to-peer%20Communication/TimeTest/Receive
+- from Raspberry to Arduino:   
+Raspberry side:transmitter   
+Arduino side:[Receiver](https://github.com/nopnop2002/Arduino-STM32-nRF24L01/tree/master/example/Peer-to-peer%20Communication/TimeTest/Receive)
 
-- from Arduino to Raspberry Pi
-Raspberry Pi side:receiver   
-Arduino side:https://github.com/nopnop2002/Arduino-STM32-nRF24L01/tree/master/example/Peer-to-peer%20Communication/TimeTest/Emitter
+- from Arduino to Raspberry:   
+Raspberry side:receiver   
+Arduino side:[Emitter](https://github.com/nopnop2002/Arduino-STM32-nRF24L01/tree/master/example/Peer-to-peer%20Communication/TimeTest/Emitter)
 
