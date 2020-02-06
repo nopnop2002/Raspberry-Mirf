@@ -70,4 +70,5 @@ I used [this](https://github.com/nopnop2002/esp-idf-mirf) library on esp-idf.
 # Important point
 When changing the settings of the nRF24L01, it is necessary to power cycle the nRF24L01 before executing.   
 Because nRF24L01 remembers the previous setting.   
+nRF24L01 does not have Software Reset function.   
 
