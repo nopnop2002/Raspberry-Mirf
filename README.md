@@ -64,3 +64,6 @@ Arduino side:[Receiver](https://github.com/nopnop2002/Arduino-STM32-nRF24L01/tre
 Raspberry side:receiver   
 Arduino side:[Emitter](https://github.com/nopnop2002/Arduino-STM32-nRF24L01/tree/master/example/Peer-to-peer%20Communication/TimeTest/Emitter)
 
+# Important point
+When changing the settings of the nRF24L01, it is necessary to power cycle the nRF24L01 before executing.   
+Because nRF24L01 remembers the previous setting.   
