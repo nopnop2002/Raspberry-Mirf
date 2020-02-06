@@ -54,7 +54,7 @@ sudo ./receiver
 ```
 
 # Communicat with Arduino
-I used this library on Arduino.   
+I used [this](https://github.com/nopnop2002/Arduino-STM32-nRF24L01) library on Arduino.   
 
 - from Raspberry to Arduino:   
 Raspberry side:transmitter   
