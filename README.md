@@ -8,14 +8,22 @@ I updated [this](https://github.com/dingcheng/MirfPi).
 
 # Environment
 I tested on this environment:
+
+- Raspberry Pi
 ```
 $ uname -a
 Linux raspberrypi 4.19.66+ #1253 Thu Aug 15 11:37:30 BST 2019 armv6l GNU/Linux
 ```
 
+- Orangepi PC
+```
+$ uname -a
+Linux orangepipc 4.19.62-sunxi #5.92 SMP Wed Jul 31 22:07:23 CEST 2019 armv7l GNU/Linux
+```
+
 # Wirering
 
-|nRF24L01||Raspberry|
+|nRF24L01||RPi/OPi|
 |:-:|:-:|:-:|
 |MISO|--|Pin#21(SPI MISO)|
 |SCK|--|Pin#23(SPI SCLK)|
@@ -27,14 +35,15 @@ Linux raspberrypi 4.19.66+ #1253 Thu Aug 15 11:37:30 BST 2019 armv6l GNU/Linux
 
 \*You can change any pin.   
 ```
-Mirf.cePin=25; // GPIO25
-Mirf.csnPin=8; // GPIO8
+Mirf.cePin=XX;  // GPIOXX
+Mirf.csnPin=YY; // GPIOYY
 ```
 
 # Library Install
 ```
 git clone https://github.com/nopnop2002/Raspberry-Mirf
 cd Raspberry-Mirf
+cp Makefile.opi Makefile (Orangepi Only)
 make
 sudo make install
 ```

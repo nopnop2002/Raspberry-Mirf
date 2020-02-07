@@ -18,9 +18,20 @@ void delay(int ms) {
 
 int main(int argc, char** argv)
 {
+//Raspberry Pi
+#if 1
 	Nrf24l Mirf = Nrf24l("/dev/spidev0.1", 4000000);
 	Mirf.cePin=25; // GPIO25
 	Mirf.csnPin=8; // GPIO8
+#endif
+
+//OrangePi PC
+#if 0
+	Nrf24l Mirf = Nrf24l("/dev/spidev0.0", 4000000);
+	Mirf.cePin=2;   // GPIO2
+	Mirf.csnPin=67; // GPIO67
+#endif
+
 	Mirf.init();
 	Mirf.setRADDR((uint8_t *)"FGHIJ");
 	Mirf.payload = sizeof(mydata.value);
