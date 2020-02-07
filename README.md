@@ -23,13 +23,13 @@ Linux orangepipc 4.19.62-sunxi #5.92 SMP Wed Jul 31 22:07:23 CEST 2019 armv7l GN
 
 # Wirering
 
-|nRF24L01||RPi/OPi|
+|nRF24L01||Raspberry Pi|
 |:-:|:-:|:-:|
 |MISO|--|Pin#21(SPI MISO)|
 |SCK|--|Pin#23(SPI SCLK)|
 |MOSI|--|Pin#19(SPI MOSI)|
 |CE|--|Pin#22(GPIO25)(*)|
-|CSN|--|Pin#24(SPI CE0)(*)|
+|CSN|--|Pin#24(GPIO8)(*)|
 |GND|--|GND|
 |VCC|--|3.3V|
 
@@ -63,6 +63,18 @@ sudo ./receiver
 
 # Orangepi PC support
 
+- Wirering
+
+|nRF24L01||OrangePi PC|
+|:-:|:-:|:-:|
+|MISO|--|Pin#21(SPI MISO)|
+|SCK|--|Pin#23(SPI SCLK)|
+|MOSI|--|Pin#19(SPI MOSI)|
+|CE|--|Pin#22(GPIO2)(*)|
+|CSN|--|Pin#24(GPIO67)(*)|
+|GND|--|GND|
+|VCC|--|3.3V|
+
 - Library Install
 ```
 git clone https://github.com/nopnop2002/Raspberry-Mirf
@@ -73,7 +85,7 @@ sudo make install
 ```
 
 - Change source
-Disable Raspberry Pi and Enable OrangePi PC   
+Disable Raspberry Pi and Enable OrangePi PCZZ   
 ```
 // Raspberry pi
 #if 1
