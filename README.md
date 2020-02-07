@@ -43,7 +43,6 @@ Mirf.csnPin=YY; // GPIOYY
 ```
 git clone https://github.com/nopnop2002/Raspberry-Mirf
 cd Raspberry-Mirf
-cp Makefile.opi Makefile (Orangepi Only)
 make
 sudo make install
 ```
@@ -60,6 +59,35 @@ sudo ./transmitter
 or 
 
 sudo ./receiver
+```
+
+# Orangepi PC support
+
+## Library Install
+```
+git clone https://github.com/nopnop2002/Raspberry-Mirf
+cd Raspberry-Mirf
+cp Makefile.opi Makefile
+make
+sudo make install
+```
+
+## Change source
+Disable Raspberry Pi and Enable Orange Pi   
+```
+// Raspberry pi
+#if 1
+        Nrf24l Mirf = Nrf24l("/dev/spidev0.1", 4000000);
+        Mirf.cePin=25; // GPIO25
+        Mirf.csnPin=8; // GPIO8
+#endif
+
+//OrangePi PC
+#if 0
+    Nrf24l Mirf = Nrf24l("/dev/spidev0.0", 4000000);
+    Mirf.cePin=2;   // GPIO2
+    Mirf.csnPin=67; // GPIO67
+#endif
 ```
 
 # Communicat with Arduino
