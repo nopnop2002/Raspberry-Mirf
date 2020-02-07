@@ -101,7 +101,8 @@ Disable Raspberry Pi and Enable OrangePi PC
     Nrf24l Mirf = Nrf24l("/dev/spidev0.0", 4000000);
     Mirf.cePin=2;   // GPIO2
     Mirf.csnPin=67; // GPIO67
-#endif```
+#endif
+```
 
 # Communicat with Arduino
 I used [this](https://github.com/nopnop2002/Arduino-STM32-nRF24L01) library on Arduino.   
