@@ -27,9 +27,9 @@ int main(int argc, char** argv)
 
 //OrangePi PC
 #if 0
-    Nrf24l Mirf = Nrf24l("/dev/spidev0.0", 4000000);
-    Mirf.cePin=2;   // GPIO2
-    Mirf.csnPin=67; // GPIO67
+	Nrf24l Mirf = Nrf24l("/dev/spidev0.0", 4000000);
+	Mirf.cePin=2;	// GPIO2
+	Mirf.csnPin=67; // GPIO67
 #endif
 
 	Mirf.init();
@@ -40,9 +40,9 @@ int main(int argc, char** argv)
 	printf("setup done.\n\r");
 
 	while(1) {
-		Mirf.setTADDR((uint8_t *)"FGHIJ");      //Set Destination address
+		Mirf.setTADDR((uint8_t *)"FGHIJ");		//Set Destination address
 		mydata.now_time = __millis();
-		Mirf.send(mydata.value);                //Send instructions
+		Mirf.send(mydata.value);				//Send instructions
 		printf("Wait for sending.....\n");
 		//Test you send successfully
 		if (Mirf.isSend()) {
