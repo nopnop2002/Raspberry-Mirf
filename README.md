@@ -75,6 +75,8 @@ sudo ./receiver
 |GND|--|GND|
 |VCC|--|3.3V|
 
+\*You can change any pin.   
+
 - Library Install
 ```
 git clone https://github.com/nopnop2002/Raspberry-Mirf
@@ -84,8 +86,8 @@ make
 sudo make install
 ```
 
-- Change source
-Disable Raspberry Pi and Enable OrangePi PCZZ   
+- Change source   
+Disable Raspberry Pi and Enable OrangePi PC   
 ```
 // Raspberry pi
 #if 1
