@@ -63,7 +63,7 @@ sudo ./receiver
 
 # Orangepi PC support
 
-## Library Install
+- Library Install
 ```
 git clone https://github.com/nopnop2002/Raspberry-Mirf
 cd Raspberry-Mirf
@@ -72,8 +72,8 @@ make
 sudo make install
 ```
 
-## Change source
-Disable Raspberry Pi and Enable Orange Pi   
+- Change source
+Disable Raspberry Pi and Enable OrangePi PC   
 ```
 // Raspberry pi
 #if 1
