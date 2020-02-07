@@ -39,7 +39,7 @@ spi.o: spi.cpp
 	g++ -Wall -fPIC ${CCFLAGS} -c spi.cpp
 
 compatibility.o: compatibility.c
-	gcc -Wall -fPIC  ${CCFLAGS} -c compatibility.c
+	g++ -Wall -fPIC  ${CCFLAGS} -c compatibility.c
 
 transmitter: transmitter.cpp ${LIBNAME}
 	g++ ${CCFLAGS} -L./  -lmirf24 $@.cpp -o $@
